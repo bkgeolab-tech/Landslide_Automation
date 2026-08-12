@@ -6,19 +6,48 @@ Cấu trúc tách rõ 3 phần:
 2. `Web/`: dashboard Leaflet.
 3. `Output/latest`, `Output/runs`, `Output/static`: kết quả mới nhất, lịch sử run, file tĩnh cho web.
 
-## Chạy API
+## Chạy API bằng Docker (VS Code / PowerShell)
 
-```bash
-cd Landslide_automation
-python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+Mở terminal (Terminal trong VS Code hoặc PowerShell trên Windows) và chạy các lệnh sau:
+
+```powershell
+# Di chuyển vào thư mục code
+cd "E:\000. LANDSLIDE SERVER\Landslide_Automation" 
+
+# Di chuyển vào thư mục backend để chạy docker
+cd backend
+
+# Khởi chạy các dịch vụ qua Docker Compose
+docker-compose up -d --build
 ```
 
-Mở:
+Để dừng server, chạy lệnh:
+
+```powershell
+docker-compose down
+```
+
+Để mở Website
+```text
+https://landslide-automation.vercel.app/
+```
+
+## Config link Cloudflare Tunnel cho Web (Sài Quick Tunnel của CloudFlare)
+Do chưa có config domain cứng vào Project cho nên khi Docker compose thì Cloudflare sẽ tạo ra 1 link random -> cần config vào Vercel để Web có thể nhận được dữ liệu từ Backend
+
+1. Mở Dashboard Vercel của Project:
 
 ```text
-http://localhost:8000
-http://localhost:8000/docs
+https://vercel.com/bkgeolab-techs-projects/landslide-automation
 ```
+
+2. Chọn Environment Variables ở Thanh menu bên trái
+
+3. Chọn Edit `VITE_API_BASE_URL`, nhập giá trị `Value = CLOUDFLARE_LINK` (được generate khi chạy `docker-compose`)
+
+4. Bấm nút Redeploy để khởi động lại web
+
+
 
 ## Endpoint chính
 
