@@ -1,0 +1,12 @@
+{
+  "region_id": "nha_trang_2018",
+  "model_crs": "EPSG:32649",
+  "web_crs": "EPSG:4326",
+  "soil_depth": {
+    "method": "elevation_linear",
+    "hmax": 2.9,
+    "hmin": 1.0,
+    "dem_min": null,
+    "dem_max": null
+  }
+}

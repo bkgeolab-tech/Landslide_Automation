@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+earthengine-api
+google-auth
+python-dotenv
+numpy
+pandas
+rasterio
+matplotlib
+scipy
+boto3
+boto3-stubs[s3]

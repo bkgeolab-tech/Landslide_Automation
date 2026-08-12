@@ -1,0 +1,40 @@
+{
+  "source_dem_path": "/app/data/input/DEM.tif",
+  "source_dem_size": 263000,
+  "source_dem_modified_time": 1783160272.0,
+  "model_dem_path": "/app/data/input/DEM_model.tif",
+  "model_dem_size": 144178,
+  "model_dem_modified_time": 1783160272.0,
+  "width": 200,
+  "height": 258,
+  "crs": "EPSG:32649",
+  "transform": [
+    29.631920060082226,
+    0.0,
+    300839.3309410723,
+    0.0,
+    -29.631920060082226,
+    1349940.092899025,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "nodata": -3.4028234663852886e+38,
+  "region_id": "nha_trang",
+  "model_crs": "EPSG:32649",
+  "soil_depth_config": {
+    "method": "elevation_linear",
+    "hmax": 2.9,
+    "hmin": 1.0,
+    "dem_min": null,
+    "dem_max": null
+  },
+  "soil_depth_info": {
+    "method": "elevation_linear",
+    "hmax": 2.9,
+    "hmin": 1.0,
+    "dem_min": 0.0,
+    "dem_max": 646.2520751953125
+  },
+  "num_pixels": 28152
+}

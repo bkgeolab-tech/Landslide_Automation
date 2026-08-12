@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: landslide_web
+    restart: unless-stopped
+    ports:
+      # Ánh xạ port 80 của máy chủ host vào port 80 của container
+      - "80:80"
+    environment:
+      # (Tuỳ chọn) Nếu Web của bạn cần truyền biến vào lúc runtime, cấu hình ở đây
+      - NODE_ENV=production

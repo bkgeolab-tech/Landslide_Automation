@@ -1,0 +1,19 @@
+{
+  "region_id": "nha_trang",
+  "region_name": "Nha Trang, Vietnam",
+  "roi": [109.1, 12.1, 109.3, 12.2],
+  "model_crs": "EPSG:32649",
+  "soil_depth": {
+    "method": "elevation_linear",
+    "hmax": 2.9,
+    "hmin": 1.0,
+    "dem_min": null,
+    "dem_max": null
+  },
+  "validation_2018": {
+    "event_name": "Nha Trang rainfall event 2018",
+    "start_time": "2018-11-17T03:00:00",
+    "end_time": "2018-11-18T07:00:00",
+    "rain_source": "GSMaP"
+  }
+}

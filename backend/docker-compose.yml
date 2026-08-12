@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: landslide_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/input:/app/data/input
+      - ./data/output:/app/data/output
+      # Map the Google Earth Engine key
+      - ./gee-key.json:/app/gee-key.json:ro
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  cron:
+    build: .
+    container_name: landslide_cron
+    restart: unless-stopped
+    command: ["bash", "entrypoint_cron.sh"]
+    volumes:
+      - ./data/input:/app/data/input
+      - ./data/output:/app/data/output
+      - ./gee-key.json:/app/gee-key.json:ro
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflare_tunnel
+    restart: unless-stopped
+
+    # Using for Domain
+    # command: tunnel run
+    # environment:
+    #   - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+
+    # Using for Quick Tunnel
+    command: tunnel --url http://api:8000
+    depends_on:
+      - api
