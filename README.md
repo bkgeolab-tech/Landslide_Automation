@@ -45,25 +45,24 @@ https://vercel.com/bkgeolab-techs-projects/landslide-automation
 2. Chọn Environment Variables ở Thanh menu bên trái
 
 <div align="center">
-    <img src="image.png" alt="alt text" width="600"/>
+    <img src="image/image.png" alt="alt text" width="600"/>
 </div>
 
 
 3. Chọn Edit `VITE_API_BASE_URL`, nhập giá trị `Value = CLOUDFLARE_LINK` (được generate khi chạy `docker-compose`)
 
 <div align="center">
-    <img src="image-1.png" alt="alt text" width="600"/>
+    <img src="image/image-1.png" alt="alt text" width="600"/>
     <br><br>
-    <img src="image-2.png" alt="alt text" width="600"/>
+    <img src="image/image-2.png" alt="alt text" width="600"/>
     <br><br>
-    <img src="image-3.png" alt="alt text" width="600"/>
+    <img src="image/image-3.png" alt="alt text" width="600"/>
 </div>
-
 
 4. Bấm nút Redeploy để khởi động lại web
 
 <div align="center">
-<img src="image-5.png" alt="alt text" width="600"/>
+<img src="image/image-5.png" alt="alt text" width="600"/>
 </div>
 
 
