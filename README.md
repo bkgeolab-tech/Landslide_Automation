@@ -11,7 +11,7 @@ Cấu trúc tách rõ 3 phần:
 Mở terminal (Terminal trong VS Code hoặc PowerShell trên Windows) và chạy các lệnh sau:
 
 ```powershell
-# Di chuyển vào thư mục code
+# Di chuyển vào thư mục code nếu sài PowerShell
 cd "E:\000. LANDSLIDE SERVER\Landslide_Automation" 
 
 # Di chuyển vào thư mục backend để chạy docker
@@ -41,12 +41,30 @@ Do chưa có config domain cứng vào Project cho nên khi Docker compose thì 
 https://vercel.com/bkgeolab-techs-projects/landslide-automation
 ```
 
+
 2. Chọn Environment Variables ở Thanh menu bên trái
+
+<div align="center">
+    <img src="image.png" alt="alt text" width="600"/>
+</div>
+
 
 3. Chọn Edit `VITE_API_BASE_URL`, nhập giá trị `Value = CLOUDFLARE_LINK` (được generate khi chạy `docker-compose`)
 
+<div align="center">
+    <img src="image-1.png" alt="alt text" width="600"/>
+    <br><br>
+    <img src="image-2.png" alt="alt text" width="600"/>
+    <br><br>
+    <img src="image-3.png" alt="alt text" width="600"/>
+</div>
+
+
 4. Bấm nút Redeploy để khởi động lại web
 
+<div align="center">
+<img src="image-5.png" alt="alt text" width="600"/>
+</div>
 
 
 ## Endpoint chính

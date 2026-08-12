@@ -53,3 +53,4 @@ created_at_utc,source,scenario,collection,band,creation_time,forecast_time,forec
 2026-08-09T14:38:47Z,ECMWF NRT IFS,worst_case_max_roi,ECMWF/NRT_FORECAST/IFS/OPER,total_precipitation_sfc,2026-08-09T06:00:00+00:00,2026-08-09T12:00:00+00:00,6,0.0,6,0.0,1,"[109.1, 12.1, 109.3, 12.2]"
 2026-08-12T13:17:36Z,ECMWF NRT IFS,worst_case_max_roi,ECMWF/NRT_FORECAST/IFS/OPER,total_precipitation_sfc,2026-08-12T00:00:00+00:00,2026-08-12T06:00:00+00:00,6,0.0,6,0.0,1,"[109.1, 12.1, 109.3, 12.2]"
 2026-08-12T13:19:41Z,ECMWF NRT IFS,worst_case_max_roi,ECMWF/NRT_FORECAST/IFS/OPER,total_precipitation_sfc,2026-08-12T00:00:00+00:00,2026-08-12T06:00:00+00:00,6,0.0,6,0.0,1,"[109.1, 12.1, 109.3, 12.2]"
+2026-08-12T14:00:34Z,ECMWF NRT IFS,worst_case_max_roi,ECMWF/NRT_FORECAST/IFS/OPER,total_precipitation_sfc,2026-08-12T00:00:00+00:00,2026-08-12T06:00:00+00:00,6,0.0,6,0.0,1,"[109.1, 12.1, 109.3, 12.2]"
